@@ -1,0 +1,59 @@
+#header {
+  justify-content: center;
+}
+#header div a {
+  color: #ffc107;
+  font-weight: bold;
+  font-style: italic;
+}
+
+#main {
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(../img/img-0.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#main button {
+  height: 2.5rem;
+}
+#main #container {
+  margin-top: 5rem;
+  width: 50%;
+  height: 50%;
+}
+#main #container figure {
+  position: relative;
+  height: 100%;
+  max-height: 460px;
+}
+#main #container figure #prev,
+#main #container figure #next {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  font-size: 2rem;
+  color: white;
+  top: 60%;
+  transition: 0.3s;
+}
+#main #container figure #prev:hover,
+#main #container figure #next:hover {
+  transform: scale(2);
+}
+#main #container figure #prev {
+  left: 0;
+}
+#main #container figure #next {
+  right: 0;
+}
+#main #container figure img {
+  display: none;
+  position: absolute;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=main.css.map */
