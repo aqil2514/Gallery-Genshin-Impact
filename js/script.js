@@ -10,6 +10,7 @@ $(document).ready(function () {
       $("#prev").css("display", "block");
       $("#next").css("display", "block");
       slide = 0;
+      $("#main").css("background-image", `linear-gradient(45deg, #000000cc, rgba(0, 0, 0, 0.5)), url(img/img-${slide}.jpg)`);
     });
 
     images.each(function (index, img) {
@@ -53,10 +54,10 @@ $(document).ready(function () {
     images.each(function (index, img) {
       if (index == slide) {
         $(img).fadeIn(1000);
+        $("#main").css("background-image", `linear-gradient(45deg, #000000cc, rgba(0, 0, 0, 0.5)), url(img/img-${slide}.jpg)`);
       } else if (index !== slide) {
         $(img).fadeOut(1000);
       }
     });
-    console.log(slide);
   });
 });
